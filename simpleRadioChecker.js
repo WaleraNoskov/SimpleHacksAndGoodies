@@ -4,6 +4,8 @@ function checkRadios(value) {
             if (item.value == value)
                 item.checked = true
         })
+
+        Array.from(document.getElementsByName("characteristic"))[0].value = '-'
 }
 
 checkRadios(3) //оценка, которую надо поставить:
